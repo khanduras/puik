@@ -9,21 +9,27 @@ UI Kit is a "A lightweight and modular front-end framework for developing fast a
  * [UI Kit](http://getuikit.com)
 
 ##Features
+ * Responsive, Mobile-First Design
+ * Easy to learn, Powerful yet Simple
+ * Use UI Kit [Customizer](http://www.getuikit.com/docs/customizer.html) to quickly and beautifully transform UI Kit to your own design
 
+##Theme and Plugins
+PUIK includes a UI Kit based boilerplate with many features and functions built into an easy to manage config file. There are also many different core plugins for modular functionalities.
 
-
-##Theme and Plugin
-
-
+Examples:
+ * puikTheme :: Manages options for UI Kit ex. Navbar, Sidebar, Footer and Content layouts and options
+ * puiKSearch :: Adds [UI Kit Search](http://www.getuikit.com/docs/addons_search.html)
+ * more to come....
 
 ##Ambitions
-
-
+I have already [started this project](https://github.com/khanduras/pico_uikit) with Pico before I discovered Phile. You can see a demo of what I'd like to accomplish [here](http://puik.khanduras.net).
 
 ##Thanks To
-
 This project couldn't be possible if it wasn't for the open-source community of developers
 
-  * Pico CMS and its creator
-  * Yootheme for creating UIKit
-  * James Doyle & Frank Nägler (NeoBlack) et al for PhileCMS, forked from Pico
+  * [Gilbert Pellegrom](http://gilbert.pellegrom.me/) for developing Pico
+  * [Yootheme](http://www.yootheme.com/) for creating [UI Kit](http://getuikit.com)
+  * [James Doyle](https://github.com/james2doyle) & Frank Nägler ([NeoBlack](https://github.com/NeoBlack)) et al for PhileCMS, forked from Pico
+
+##Contact
+My name is [Daniel James](mailto:daniel.james@chiefqualakon.net). Email me if you're interested in helping me with this project. I'm not a PHP Developer but I see a benefit to a package like PUIK. 
