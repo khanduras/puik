@@ -6,7 +6,8 @@ PhileCMS is a flat-file CMS with no database required.
    * [PhileCMS G+ Community](https://plus.google.com/u/0/communities/105363272048954062353)
  
 UI Kit is a "A lightweight and modular front-end framework for developing fast and powerful web interfaces." 
- * [UI Kit](http://getuikit.com)
+ * [UI Kit Homepage](http://getuikit.com)
+ * [UI Kit Github](https://github.com/uikit/uikit)
 
 ##Features
  * Responsive, Mobile-First Design
