@@ -19,12 +19,12 @@ UI Kit is a "A lightweight and modular front-end framework for developing fast a
 ##Theme and Plugins
 PUIK includes a UI Kit based boilerplate with many features and functions built into an easy to manage config file. There are also many different core plugins for modular functionalities.
 
-###Plugins:
+###Plugins
  * puikManager :: Manages options for UI Kit ex. Navbar, Sidebar, Footer and Content layouts and options
  * puiKSearch :: Adds [UI Kit Search](http://www.getuikit.com/docs/addons_search.html)
  * more to come....
 
-###Themes:
+###Themes
  * puik :: A robust theme required for all PUIK plugins.
  
 ##Getting Started
