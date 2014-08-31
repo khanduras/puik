@@ -1,0 +1,12 @@
+{% if meta.page_width == 'fixed' %}<div class="uk-container uk-container-center">{% endif %}
+	<nav class="uk-navbar {% if meta.page_width == 'fluid' %}uk-navbar-attached{% endif %}{% if meta.page_width == 'full' %}uk-navbar-attached{% endif %}">
+		{% if meta.page_width == 'full' %}<div class="uk-container uk-container-center">{% endif %}
+			<ul class="uk-navbar-nav">
+                <li><a class="uk-form" href="admin">Admin</a></li>
+
+			</ul>
+			<div class="uk-navbar-content uk-navbar-flip uk-hidden-small">&copy; {{ site_title }} 2014</div>
+		{% if meta.page_width == 'full' %}</div>{% endif %}
+	</nav>
+{% if meta.page_width == 'fixed' %}</div>{% endif %}
+

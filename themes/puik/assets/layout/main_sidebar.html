@@ -1,0 +1,19 @@
+<!-- Twig Macro -->
+{% macro sidebar_nav(navigation) %}
+    {% import _self as macros %}
+    {% for item in navigation %}
+        {% if item.meta.content_type == "page" or item.meta.content_type == "simple" %}
+        <li class="{% if item.meta.title == meta.title %}uk-active{% endif %}{% if item.children %}uk-parent{% endif %}">
+            <a href="{{ config.base_url }}{{ item.uri }}">{{ item.meta.title }}</a>
+            {% if item.children %}
+                <ul class="uk-nav uk-nav-side">
+                    {{ macros.sidebar_nav(item.children) }}
+                </ul>
+            {% endif %}
+        </li>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+{% import _self as macros %}
+<ul class="uk-nav uk-nav-side">{{ macros.sidebar_nav(navigation) }}</ul>

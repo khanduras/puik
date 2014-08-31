@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		
+		<title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+		{% if meta.description %}
+		<meta name="description" content="{{ meta.description }}"> 
+		{% endif %}{% if meta.robots %}
+		<meta name="robots" content="{{ meta.robots }}">
+		{% endif %}
+		<!-- <link rel="stylesheet" href="{{ base_url }}/plugins/pico_editor/pico_editor.css" type="text/css" /> -->
+		
+		<link rel="stylesheet" href="{{ theme_url }}/assets/css/uikit.css" type="text/css" />
+		<link rel="stylesheet" href="{{ theme_url }}/assets/css/addons/uikit.addons.css" type="text/css" />
+		<link rel="stylesheet" href="{{ theme_url }}/assets/css/style.css" type="text/css" />
+		<!-- Almost Flat style -->
+		{% if meta.style == "almost-flat" %}<link rel="stylesheet" href="{{ theme_url }}/assets/css/uikit.almost-flat.min.css" />{% endif %}
+		{% if meta.style == "almost-flat" %}<link rel="stylesheet" href="{{ theme_url }}/assets/css/addons/uikit.almost-flat.addons.css" type="text/css" />{% endif %}
+		<!-- Gradient style -->
+		{% if meta.style == "gradient" %}<link rel="stylesheet" href="{{ theme_url }}/assets/css/uikit.gradient.min.css" />{% endif %}
+		{% if meta.style == "gradient" %}<link rel="stylesheet" href="{{ theme_url }}/assets/css/addons/uikit.gradient.addons.css" type="text/css" />{% endif %}
+		{% if meta.customizer %}<link rel="stylesheet" href="{{ theme_url }}/assets/css/{{ meta.customizer }}.css" type="text/css" />{% endif %}
+		
+		
+		<script src="{{ theme_url }}/assets/js/jquery-1.11.1.js"></script>
+		<script src="{{ theme_url }}/assets/js/uikit.js"></script>
+		<script src="{{ theme_url }}/assets/js/addons/sticky.js"></script>
+		<script src="{{ theme_url }}/assets/js/addons/search.js"></script>
+        <script src="{{ theme_url }}/assets/js/addons/autocomplete.js"></script>
+		<script src="{{ theme_url }}/assets/js/custom.js"></script>
+	</head>
+	<body>
+
+		{% if meta.page_width == "fixed" %}<div class="uk-container uk-container-center">{% endif %}
+			{% if meta.navbar != "off" %}
+				{% if meta.navbar == "sticky" %}
+					<nav class="uk-navbar {% if meta.page_width == 'fluid' %}uk-navbar-attached{% endif %} {% if meta.page_width == 'full' %}uk-navbar-attached{% endif %}" data-uk-sticky='top:0' >
+				{% else %}
+					<nav class="uk-navbar {% if width == 'fluid' %}uk-navbar-attached{% endif %} {% if meta.page_width == 'full' %}uk-navbar-attached{% endif %}" >
+				{% endif %}
+			
+				{% if meta.page_width == "full" %}<div class="uk-container uk-container-center">{% endif %}
+					{% if meta.navbar_source %}
+						{% include meta.navbar_source %}
+					{% endif %}
+				{% if meta.page_width == 'full' %}</div>{% endif %}	
+				</nav>
+			{% endif %}
+		
+		
+			<div id="my-id" class="uk-offcanvas">
+				<div class="uk-offcanvas-bar">
+					<ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="">
+						<li class="uk-active"><a href="">Home</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Contact</a></li>
+						<li class="uk-nav-divider"></li>
+					</ul>
+					<div class="uk-navbar-content">
+						<form method="post" action="">
+							{% if user %}
+							Logged as {{ user }}
+							<input type="submit" name="logout" value="logout" />
+							{% else %}
+							<input type="text" name="login" />
+							<input type="password" name="password" />
+							<input type="submit" value="login" />
+							{% endif %}
+						</form>
+					</div>
+				</div>
+			</div>
+		{% if meta.page_width == 'fixed' %}</div>{% endif %}
+		<br /><br />
+
+		{% if meta.page_width == 'fixed' %}<div class="uk-container uk-container-center">{% endif %}
+		{% if meta.page_width == 'full' %}<div class="uk-container uk-container-center">{% endif %}
+			<div class="uk-grid">
+				{% if meta.sidebar == "off" %}
+					<div class="uk-width-6-6">
+						{% if meta.content_source %}
+							{% include meta.content_source %} 
+						{% endif %}
+					</div>
+				{% elseif meta.sidebar == "right" %}
+					<div class="uk-width-5-6">
+						{% if meta.content_source %}
+							{% include meta.content_source %} 
+						{% endif %}
+					</div>
+					<div class="uk-width-1-6">
+						{% if meta.sidebar_source %}
+							{% include meta.sidebar_source %} 
+						{% endif %}
+					</div>
+				{% elseif meta.sidebar == "left" %}
+					<div class="uk-width-1-6">
+						{% if meta.sidebar_source %}
+							{% include meta.sidebar_source %} 
+						{% endif %} 
+					</div>
+					<div class="uk-width-5-6">
+						{% if meta.content_source %}
+							{% include meta.content_source %} 
+						{% endif %}
+					</div>
+				{% endif %}
+			</div>
+		{% if meta.page_width == 'full' %}</div>{% endif %}
+		{% if meta.page_width == 'fixed' %}</div>{% endif %}<!--end div for else statement-->
+		
+		<br /><br />
+		{% if meta.footer_source %}
+			{% include meta.footer_source %}
+		{% endif %}
+	</body>
+</html>
