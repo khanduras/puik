@@ -46,7 +46,10 @@ These settings can be changed in the following order:
 
 This allows individual pages to have unique settings, but a global setting that can be changed easily. There are more options in page meta data as well that will override defaults.
 
-#2. Thanks To
+#2. Demo
+You can see a live version of the latest version of PUIK at [puik.khanduras.net](http://puik.khanduras.net)
+
+#3. Thanks To
 This project couldn't be possible if it wasn't for the open-source community of developers
 
   * [Gilbert Pellegrom](http://gilbert.pellegrom.me/) for developing Pico
