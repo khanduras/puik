@@ -57,5 +57,5 @@ This project couldn't be possible if it wasn't for the open-source community of 
   * [James Doyle](https://github.com/james2doyle) & Frank Nägler ([NeoBlack](https://github.com/NeoBlack)) et al for PhileCMS, forked from Pico
   * A [community of plugin developers](https://github.com/PhileCMS/Phile/wiki/%5BCOMMUNITY%5D-Plugins) who taught me how to work with Phile and Pico.
 
-#3. Contact
+#4. Contact
 My name is [Daniel James](mailto:daniel.james@chiefqualakon.net). Email me if you're interested in helping me with this project. I'm not a PHP Developer but I see a benefit to a package like PUIK. 
