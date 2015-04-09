@@ -1,5 +1,7 @@
 Phile UI Kit (PUIK) Framework
 ====
+
+[![Join the chat at https://gitter.im/khanduras/puik](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/khanduras/puik?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 PhileCMS is a flat-file CMS with no database required. 
    * [PhileCMS Homepage](http://philecms.com/)
    * [PhileCMS Github](https://github.com/PhileCMS/Phile/)
